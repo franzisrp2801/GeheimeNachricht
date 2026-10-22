@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geheime Nachricht</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="karte">
+    <div id="schloss">🔒</div>
+
+    <h1>Eine kleine Überraschung</h1>
+    <p class="untertitel">
+      Gib den dreistelligen Code ein.
+    </p>
+
+    <form id="code-form">
+      <div class="code-felder">
+        <input aria-label="Erste Ziffer" inputmode="numeric"
+          maxlength="1" pattern="[0-9]" required>
+        <input aria-label="Zweite Ziffer" inputmode="numeric"
+          maxlength="1" pattern="[0-9]" required>
+        <input aria-label="Dritte Ziffer" inputmode="numeric"
+          maxlength="1" pattern="[0-9]" required>
+      </div>
+
+      <button type="submit">Code bestätigen</button>
+      <p id="fehlermeldung" aria-live="polite"></p>
+    </form>
+
+    <section id="nachricht" hidden>
+      <h2>...🕵️‍♂️hallo...</h2>
+      <p>
+       
+      </p>
+    </section>
+  </main>
+</body>
+</html>
